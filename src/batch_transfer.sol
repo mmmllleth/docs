@@ -7,8 +7,8 @@ interface IERC20 {
     // don't need to define other functions, only using `transfer()` in this case
 }
 
-contract DEX {
-    address payable public owner;
+contract BAT {
+    address public owner;
 
     modifier onlyOwner() {
         require(owner == msg.sender, "Ownable: caller is not the owner");
@@ -43,4 +43,3 @@ contract DEX {
         }
     }
 }
-
